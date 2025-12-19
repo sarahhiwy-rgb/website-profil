@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PKKMB PSDKU MBD</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 35px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    /* SECTION */
+    section {
+      padding: 90px 10%;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(8px);
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .title span {
+      color: #00c6ff;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      padding: 35px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.12);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      opacity: 0.85;
+      font-size: 0.95rem;
+    }
+
+    /* SCHEDULE */
+    .schedule li {
+      list-style: none;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>PKKMB <span style="color:#00c6ff">PSDKU MBD</span></h1>
+      <p>Pengenalan Kehidupan Kampus Mahasiswa Baru</p>
+      <p>Membentuk Mahasiswa Unggul, Adaptif, dan Berkarakter</p>
+      <a href="#tentang" class="btn">Mulai Jelajahi</a>
+    </div>
+  </div>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <div class="title">
+      <h2>Tentang <span>PKKMB</span></h2>
+    </div>
+    <div class="card">
+      <p>
+        PKKMB PSDKU MBD adalah gerbang awal bagi mahasiswa baru untuk mengenal
+        dunia akademik, budaya kampus, serta menanamkan nilai integritas,
+        disiplin, dan kebersamaan sebagai calon intelektual muda.
+      </p>
+    </div>
+  </section>
+
+  <!-- TUJUAN -->
+  <section>
+    <div class="title">
+      <h2>Tujuan <span>PKKMB</span></h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>🚀 Adaptasi Cepat</h3>
+        <p>Membantu mahasiswa baru beradaptasi dengan sistem perkuliahan.</p>
+      </div>
+      <div class="card">
+        <h3>💡 Karakter Unggul</h3>
+        <p>Membentuk pribadi yang beretika, disiplin, dan bertanggung jawab.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Wawasan Global</h3>
+        <p>Menanamkan semangat kebangsaan dan kepemimpinan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JADWAL -->
+  <section>
+    <div class="title">
+      <h2>Jadwal <span>Kegiatan</span></h2>
+    </div>
+    <div class="card">
+      <ul class="schedule">
+        <li><strong>Hari 1</strong> – Pembukaan & Pengenalan Kampus</li>
+        <li><strong>Hari 2</strong> – Materi Akademik & Organisasi</li>
+        <li><strong>Hari 3</strong> – Bela Negara & Penutupan</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 PKKMB PSDKU MBD • Modern • Inspiratif • Berkarakter
+  </footer>
+
+</body>
+</html>
